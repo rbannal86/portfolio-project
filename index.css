@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box;
+  Font-Family: 'Quattrocento', Serif;
 }
 
 body {
-  font-family: "Open Sans",
-  sans-serif; 
+  background: #393D40;
   font-size: 20px;
   color: #444;
   text-align: center;
@@ -14,26 +14,34 @@ body {
 nav,
 footer {
   padding: 1% 0;
-  background-color: #aaa;
+  background-color: #393D40;
 }
 
 nav {
+  height: 5%;
+  font: black;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
   display: flex;
-  flex-direction: row;
-  
+  flex-direction: column;
+  justify-content: center;
 }
+
+.menu-button {
+  
+  background-color: #393D40;
+  border: none;
+  color: #8C6E3F;
+}
+
 #nav-pic {
-  max-width: 10%;
-  max-height: 10%;
-  border-radius: 50px;
   display: flex;
   align-content: center;
   justify-content: flex-start;
+  border: 2px solid black;
 }
 #nav-links {
   display: flex;
@@ -41,44 +49,85 @@ nav {
   flex-direction: row;
   justify-content: flex-end;
   font-size: .8rem;
+  font-weight: bold;
 }
 
-header {
-  padding: 12% 0;
+.nav-list {
+  margin-right: 5px;
 }
 
 h1 {
-  font-size: 1rem;
+  Font-Family: 'Oswald', Sans-Serif;
+  font-size: 2rem;
   align-self: center;
 }
 
-section {
+h2 {
+  font-size: 1rem;
+  Font-Family: 'Oswald', Sans-Serif;
+}
+
+header {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url(./img/steel.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  color: #B6C2CC;
+  text-shadow: 1px 1px 0 #000,
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-weight: bolder;
+  border: 2px solid #393D40;
+}
+
+/* section {
   min-height: 200px;
   padding: 6% 0;
-  background-color: #bbb;
+  background-color: #393D40;
 }
 
 section:nth-child(even) {
-  background-color: #ddd;
-}
+  
+} */
 
 .section-header {
-  border: 2px solid black;
   border-radius: 25px;
   margin: 5%;
+  margin-bottom: 0;
 }
 
 .section-content {
-  border: 2px solid black;
   border-radius: 25px;
   margin: 5%;
   font-size: .8rem;
+  margin-top: 0;
+  padding: 5%;
+  line-height: 1.3;
+  background-color: #B6C2CC;
 }
 
-#about-me-content {
-  
+/* #project-header{
+  color: #B6C2CC;
 }
+#project-section{
+  background-color: #B6C2CC;
+}
+.project-li{
+  color: #B6C2CC;
+} */
 
+.about-me-content {
+  text-align: left;
+}
+#about-me {
+  width: 50%;
+}
 .project-button {
   max-width: 25%;
   max-height: 25%;

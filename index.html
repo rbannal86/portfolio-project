@@ -3,34 +3,36 @@
 <head>
     <title>HTML wireframe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
     <nav role="navigation">
-      <img alt="picture of alex bannow" id="nav-pic" src="img/profilepic.jpg">
-      <ul id="nav-links">
-        <li>About Me</li>
-        <li>Projects</li>
-        <li>Contact Me</li>
-      </ul>
+        <button class="menu-button"><i class="fa fa-bars"></i></button>
+      <!-- <ul id="nav-links">
+        <li class="nav-list">About Me</li>
+        <li class="nav-list">Projects</li>
+        <li class="nav-list">Contact Me</li>
+      </ul> -->
     </nav>
     <main role="main">
         <header role="banner">
-            <h1>Cooking up code, one line at a time.</h1>
+            <h1>Alex Bannow.</h1>
+            <h2>Web Development.</h2>
+            <h2>Cooking up code, one line at a time.</h2>
         </header>
-        <section>
+        <section class="section-content">
             <h2 class="section-header" id="about-me">ABOUT ME</h2>
-            <p class="section-content" id="about-me-content">As a kid, I spent most of my free time in front of a computer playing games. In high school, I became interested in what was going on behind the screen. I found the concepts of coding engaging and the work challenging, but I didn't think of it as a future career. I enrolled at Western Michigan University as a history major, switched before the first day of classes to microbiology, and eventually transferred to the University of Michigan where I graduated with a BA in English Literature and Language. After college, I pursued personal creative projects, like poetry and webcomics. To make ends meet, I got a job in food-service. To my surprise, I fell in love with the creativity, the need for fast-paced problem solving, and the feeling of being part of a team. After ten years and a journey that ended with me being a pastry chef, I realized that a kitchen wasn't the right work environment for me. 
-
-                Creativity, problem-solving, and teamwork were always the highlights of my foodservice career, and I see web development as a fitting next step. And maybe, with a little luck, I'll finally find a job that doesn't involve the occasional ER visit.
-                
-                When I'm not working, you can find me rewatching the same shows on Netflix, trying out new recipes in the kitchen, or just hanging out with my wife, my dog, and my two cats.</p>
+            <p class="about-me-content">For ten years, I was a food-service employee. From making pizza at a high-end grocery store to serving as the pastry chef of a fine dining restaurant, I made learning, quality, and service my top priorities. Eating great food was a pretty nice perk, too. After years of 100-degree kitchens and countless oven scars, I knew that I had to find something better.</p>
+            <p class="about-me-content">Creativity, problem-solving, and teamwork were always the highlights of my food-service career, and I see web development as a fitting next step. And maybe, with a little luck, I'll finally find a job that doesn't involve the occasional ER visit.</p>
+            <p class="about-me-content">When I'm not working, you can find me rewatching the same shows on Netflix, trying out new recipes in the kitchen, or just hanging out with my wife, my dog, and my two cats.</p>
         </section>
-        <section>
-            <h2 class="section-header" id="projects">PROJECTS</h2>
-            <ul class="section-content" id="projects-content">
-              <li>
+        <section class="section-content" id="project-section">
+            <h2 class="section-header projects" id="project-header">PROJECTS</h2>
+            <ul id="projects-content projects">
+              <li class="project-li">
                 <button class="project-button" id="project-one"><img class="project-img" alt="image from bookmark app" src="img/bookmarks.png"></button>
                 <span class="project-description">A minimalist app for bookmarks.</span>
                 <details class="hidden">
@@ -39,7 +41,7 @@
                   <a href="https://thinkful-ei-heron.github.io/alex-bookmarks-app/">Live App</a>
                 </details>
               </li>
-              <li><button class="project-button" id="project-two"><img class="project-img" alt="image from quiz app" src="img/quizapp.png"></button>
+              <li class="project-li"><button class="project-button" id="project-two"><img class="project-img" alt="image from quiz app" src="img/quizapp.png"></button>
                 <span>A quiz demonstrating jQuery techniques.</span>
                 <details class="hidden">
                     <span>Technologies Used: JavaScript/jQuery, HTML, CSS</span>
@@ -47,19 +49,19 @@
                     <a href="https://thinkful-ei-heron.github.io/Alex_Balay_QuizApp/">Live App</a>
                 </details>
               </li>
-              <li><button class="project-button" id="project-three">Project 3</button>
+              <li class="project-li"><button class="project-button" id="project-three">Project 3</button>
                 <span class="project-description"></span>
                 <details class="hidden"></details>
               </li>
-              <li><button class="project-button" id="project-four">Project 4</li></button>
+              <li class="project-li"><button class="project-button" id="project-four">Project 4</li></button>
               <span class="project-description"></span>
               <details class="hidden"></details>
               </li>
             </ul>
         </section>
-        <section>
+        <section class="section-content">
             <h2 class="section-header" id="contact-me">CONTACT ME</h2>
-            <ul class="section-content" id="contact-me-content">
+            <ul  id="contact-me-content">
               <li><a href= "mailto: rbannal@gmail.com">EMAIL</a></li>
               <li><a href= "https://github.com/rbannal86">GITHUB</a></li>
               <li><a href= "https://www.linkedin.com/in/alex-bannow-203b1918a/">LINKEDIN</a></li>
