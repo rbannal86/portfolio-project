@@ -11,12 +11,12 @@
 <body>
   <a name="top"></a>
     <nav role="navigation">
-        <button class="menu-button"><i class="fa fa-bars"></i></button>
-      <!-- <ul class= "hidden" id="nav-links">
-        <li class="nav-list">About Me</li>
-        <li class="nav-list">Projects</li>
-        <li class="nav-list">Contact Me</li>
-      </ul> -->
+      <button id="nav-button" class="menu-button"><i class="fa fa-bars"></i></button>
+      <ul class= "hidden" id="nav-links">
+        <li class="nav-list"><a href="#About-Me">About Me</a></li>
+        <li class="nav-list"><a href="#Project-Anchor">Projects</a></li>
+        <li class="nav-list"><a href="#Contact-Anchor">Contact Me</a></li>
+      </ul>
     </nav>
     <main role="main">
         <header role="banner">
@@ -25,25 +25,28 @@
             <h2>Cooking up code, one line at a time.</h2>
         </header>
         <section class="section-content">
+            <a name="About-Me"></a>
             <h2 class="section-header" id="about-me">ABOUT ME</h2>
             <p class="about-me-content">For ten years, I was a food-service employee. From making pizza at a high-end grocery store to serving as the pastry chef of a fine dining restaurant, I made learning, quality, and service my top priorities. Eating great food was a pretty nice perk, too. After years of 100-degree kitchens and countless oven scars, I knew that I had to find something better.</p>
             <p class="about-me-content">Creativity, problem-solving, and teamwork were always the highlights of my food-service career, and I see web development as a fitting next step. And maybe, with a little luck, I'll finally find a job that doesn't involve the occasional ER visit.</p>
             <p class="about-me-content">When I'm not working, you can find me rewatching the same shows on Netflix, trying out new recipes in the kitchen, or just hanging out with my wife, my dog, and my two cats.</p>
         </section>
         <section class="section-content" id="project-section">
+            <a name="Project-Anchor"></a>
             <h2 class="section-header projects" id="project-header">PROJECTS</h2>
             <ul id="projects-content projects">
               <li class="project-li">
                 <button class="project-button" id="project-one">A minimalist app for bookmarks.</button>
-                <section class="hidden">
+                <section class="hidden project-item" id="content-one">
                   <img class="project-img" alt="image from bookmark app" src="img/bookmarks.png">
                   <span>Technologies Used: JavaScript/jQuery, HTML, CSS</span>
                   <a href="https://github.com/thinkful-ei-heron/alex-bookmarks-app">GitHub Repo</a>
                   <a href="https://thinkful-ei-heron.github.io/alex-bookmarks-app/">Live App</a>
                 </section>
               </li>
-              <li class="project-li"><button class="project-button" id="project-two">A quiz demonstrating jQuery techniques.</button>
-                <section class="hidden">
+              <li class="project-li">
+                <button class="project-button" id="project-two">A quiz demonstrating jQuery techniques.</button>
+                <section class="hidden project-item" id="content-two">
                     <img class="project-img" alt="image from quiz app" src="img/quizapp.png">
                     <span>Technologies Used: JavaScript/jQuery, HTML, CSS</span>
                     <a href="https://github.com/thinkful-ei-heron/Alex_Balay_QuizApp">GitHub Repo</a>
@@ -51,18 +54,19 @@
                 </section>
               </li>
               <li class="project-li"><button class="project-button" id="project-three">Project 3</button>
-                <section class="hidden">
-                  <span class="project-description"></span>
+                <section class="hidden project-item" id="content-three">
+                  <span class="project-description">Coming Soon</span>
                 </section>
               </li>
               <li class="project-li"><button class="project-button" id="project-four">Project 4</button>
-              <section class="hidden">
-                <span class="project-description"></span>
+              <section class="hidden project-item" id="content-four">
+                <span class="project-description">Coming Soon</span>
               </section>
               </li>
             </ul>
         </section>
         <section class="section-content">
+            <a name="Contact-Anchor"></a>
             <h2 class="section-header" id="contact-me">CONTACT ME</h2>
             <ul  id="contact-me-content">
               <li class="contact-li"><a href= "mailto: rbannal@gmail.com">EMAIL</a></li>
@@ -84,5 +88,7 @@
         <i class="fa fa-chevron-up"></i>
       </button>
     </footer>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>

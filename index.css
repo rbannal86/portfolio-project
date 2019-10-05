@@ -25,7 +25,6 @@ footer {
 }
 
 nav {
-  height: 5%;
   font: black;
   position: fixed;
   top: 0;
@@ -48,15 +47,16 @@ nav {
   border: 2px solid black;
 }
 #nav-links {
-  display: flex;
-  list-style: none;
-  flex-direction: row;
-  justify-content: flex-end;
-  font-size: .8rem;
-  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #8C6E3F;
 }
 .nav-list {
   margin-right: 5px;
+}
+.nav-list > a {
+  text-decoration: none;
+  color: inherit;
 }
 h1 {
   Font-Family: 'Oswald', Sans-Serif;
