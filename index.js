@@ -4,6 +4,11 @@ const menuExpand = function() {
   });
 };
 
+const menuClose = function() {
+  $('#nav-links').click(e => {
+    $('#nav-links').toggleClass('hidden');
+  });
+};
 
 const projectExpand = function() {
   $('#project-one').click(e => {
@@ -23,6 +28,7 @@ const projectExpand = function() {
 
 const main = function() {
   menuExpand();
+  menuClose();
   projectExpand();
 };
 

@@ -34,6 +34,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0;
 }
 .menu-button {
   background-color: #393D40;
@@ -176,10 +177,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    
   }
   #nav-links > li {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .section-header {
     display: inline;
