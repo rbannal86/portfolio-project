@@ -11,6 +11,13 @@ body {
   line-height: 1.5;
 }
 
+ul {
+  padding-left: 0;
+}
+li {
+  list-style: none;
+}
+
 nav,
 footer {
   padding: 1% 0;
@@ -29,14 +36,11 @@ nav {
   flex-direction: column;
   justify-content: center;
 }
-
 .menu-button {
-  
   background-color: #393D40;
   border: none;
   color: #8C6E3F;
 }
-
 #nav-pic {
   display: flex;
   align-content: center;
@@ -51,22 +55,18 @@ nav {
   font-size: .8rem;
   font-weight: bold;
 }
-
 .nav-list {
   margin-right: 5px;
 }
-
 h1 {
   Font-Family: 'Oswald', Sans-Serif;
   font-size: 2rem;
   align-self: center;
 }
-
 h2 {
   font-size: 1rem;
   Font-Family: 'Oswald', Sans-Serif;
 }
-
 header {
   margin-top: 5%;
   display: flex;
@@ -85,55 +85,64 @@ header {
   font-weight: bolder;
   border: 2px solid #393D40;
 }
-
-/* section {
-  min-height: 200px;
-  padding: 6% 0;
-  background-color: #393D40;
-}
-
-section:nth-child(even) {
-  
-} */
-
 .section-header {
   border-radius: 25px;
   margin: 5%;
   margin-bottom: 0;
 }
-
 .section-content {
   border-radius: 25px;
   margin: 5%;
   font-size: .8rem;
-  margin-top: 0;
   padding: 5%;
   line-height: 1.3;
   background-color: #B6C2CC;
+  color: #32050e;
+  font-weight: bold;
 }
-
-/* #project-header{
-  color: #B6C2CC;
-}
-#project-section{
-  background-color: #B6C2CC;
-}
-.project-li{
-  color: #B6C2CC;
-} */
-
 .about-me-content {
   text-align: left;
 }
 #about-me {
   width: 50%;
 }
-.project-button {
-  max-width: 25%;
-  max-height: 25%;
+.hidden {
+  display: none;
 }
-
+#project-header{
+  width: 50%;
+  float: right;
+  margin-bottom: 5%;
+}
+.project-button {
+  text-align: left;
+  width: 100%;
+  height: 30px;
+  border: #393D40 solid 2px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-weight: bold;
+}
 .project-img {
   max-width: 100%;
   max-height: 100%;
+}
+#contact-me {
+  width: 50%;
+  text-align: left;
+}
+#contact-me-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-content: space-around; */
+}
+.contact-li > a {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #8C6E3F;
+}
+.contact-li > a:visited {
+  color: #32050e;
 }

@@ -9,9 +9,10 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+  <a name="top"></a>
     <nav role="navigation">
         <button class="menu-button"><i class="fa fa-bars"></i></button>
-      <!-- <ul id="nav-links">
+      <!-- <ul class= "hidden" id="nav-links">
         <li class="nav-list">About Me</li>
         <li class="nav-list">Projects</li>
         <li class="nav-list">Contact Me</li>
@@ -33,38 +34,40 @@
             <h2 class="section-header projects" id="project-header">PROJECTS</h2>
             <ul id="projects-content projects">
               <li class="project-li">
-                <button class="project-button" id="project-one"><img class="project-img" alt="image from bookmark app" src="img/bookmarks.png"></button>
-                <span class="project-description">A minimalist app for bookmarks.</span>
-                <details class="hidden">
+                <button class="project-button" id="project-one">A minimalist app for bookmarks.</button>
+                <section class="hidden">
+                  <img class="project-img" alt="image from bookmark app" src="img/bookmarks.png">
                   <span>Technologies Used: JavaScript/jQuery, HTML, CSS</span>
                   <a href="https://github.com/thinkful-ei-heron/alex-bookmarks-app">GitHub Repo</a>
                   <a href="https://thinkful-ei-heron.github.io/alex-bookmarks-app/">Live App</a>
-                </details>
+                </section>
               </li>
-              <li class="project-li"><button class="project-button" id="project-two"><img class="project-img" alt="image from quiz app" src="img/quizapp.png"></button>
-                <span>A quiz demonstrating jQuery techniques.</span>
-                <details class="hidden">
+              <li class="project-li"><button class="project-button" id="project-two">A quiz demonstrating jQuery techniques.</button>
+                <section class="hidden">
+                    <img class="project-img" alt="image from quiz app" src="img/quizapp.png">
                     <span>Technologies Used: JavaScript/jQuery, HTML, CSS</span>
                     <a href="https://github.com/thinkful-ei-heron/Alex_Balay_QuizApp">GitHub Repo</a>
                     <a href="https://thinkful-ei-heron.github.io/Alex_Balay_QuizApp/">Live App</a>
-                </details>
+                </section>
               </li>
               <li class="project-li"><button class="project-button" id="project-three">Project 3</button>
-                <span class="project-description"></span>
-                <details class="hidden"></details>
+                <section class="hidden">
+                  <span class="project-description"></span>
+                </section>
               </li>
-              <li class="project-li"><button class="project-button" id="project-four">Project 4</li></button>
-              <span class="project-description"></span>
-              <details class="hidden"></details>
+              <li class="project-li"><button class="project-button" id="project-four">Project 4</button>
+              <section class="hidden">
+                <span class="project-description"></span>
+              </section>
               </li>
             </ul>
         </section>
         <section class="section-content">
             <h2 class="section-header" id="contact-me">CONTACT ME</h2>
             <ul  id="contact-me-content">
-              <li><a href= "mailto: rbannal@gmail.com">EMAIL</a></li>
-              <li><a href= "https://github.com/rbannal86">GITHUB</a></li>
-              <li><a href= "https://www.linkedin.com/in/alex-bannow-203b1918a/">LINKEDIN</a></li>
+              <li class="contact-li"><a href= "mailto: rbannal@gmail.com">EMAIL</a></li>
+              <li class="contact-li"><a href= "https://github.com/rbannal86">GITHUB</a></li>
+              <li class="contact-li"><a href= "https://www.linkedin.com/in/alex-bannow-203b1918a/">LINKEDIN</a></li>
             </ul>
         </section>
 
@@ -76,6 +79,10 @@
             Section 4
         </section> -->
     </main>
-    <footer role="content-info"><button>Back to Top</button></footer>
+    <footer role="content-info">
+      <button class="menu-button" onclick="location.href='#top'">
+        <i class="fa fa-chevron-up"></i>
+      </button>
+    </footer>
 </body>
 </html>
