@@ -2,7 +2,6 @@
   box-sizing: border-box;
   Font-Family: 'Quattrocento', Serif;
 }
-
 body {
   background: #393D40;
   font-size: 1rem;
@@ -10,20 +9,17 @@ body {
   text-align: center;
   line-height: 1.5;
 }
-
 ul {
   padding-left: 0;
 }
 li {
   list-style: none;
 }
-
 nav,
 footer {
   padding: 1% 0;
   background-color: #393D40;
 }
-
 nav {
   font: black;
   position: fixed;
@@ -67,6 +63,7 @@ h1 {
 h2 {
   font-size: 1rem;
   Font-Family: 'Oswald', Sans-Serif;
+  text-align: center;
 }
 header {
   margin-top: 5%;
@@ -85,11 +82,6 @@ header {
     1px 1px 0 #000;
   font-weight: bolder;
   border: 2px solid #393D40;
-}
-.section-header {
-  border-radius: 25px;
-  margin: 5%;
-  margin-bottom: 0;
 }
 .section-content {
   border-radius: 25px;
@@ -110,11 +102,6 @@ header {
 .hidden {
   display: none;
 }
-#project-header{
-  width: 50%;
-  float: right;
-  margin-bottom: 5%;
-}
 .project-button {
   text-align: left;
   width: 100%;
@@ -124,6 +111,10 @@ header {
   margin-bottom: 3%;
   font-weight: bold;
 }
+section {
+  display: flex;
+  flex-direction: column;
+}
 .project-img {
   max-width: 100%;
   max-height: 100%;
@@ -131,15 +122,10 @@ header {
 .project-desc{
   text-align: left;
 }
-#contact-me {
-  width: 50%;
-  text-align: left;
-}
 #contact-me-content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* align-content: space-around; */
 }
 .contact-li > a {
   font-weight: bold;
@@ -184,10 +170,6 @@ header {
   #nav-links > li {
     font-size: 1.2rem;
   }
-  .section-header {
-    display: inline;
-    text-align: center;
-  }
   .section-content {
     margin-left: 20%;
     margin-right: 20%;
@@ -196,5 +178,4 @@ header {
   #project-header {
     float: none;
   }
-  
 }
